@@ -5,7 +5,6 @@ import {
 } from "../../constants/styleConstants";
 import IsLightModeContext from "../../contexts/IsLightModeContext";
 import styles from "./FsmExplanationPanel.module.scss";
-import trafficLightImg from "../../public/traffic_light.PNG";
 import Image from "next/image";
 
 interface IResource {
@@ -69,8 +68,10 @@ const FsmExplanationPanel = () => {
 
       <Image
         className={styles.image}
-        src={trafficLightImg}
+        src={"/traffic_light.PNG"}
         alt={"Finite state machine model of traffic light"}
+        height={270}
+        width={350}
       />
 
       <br />
