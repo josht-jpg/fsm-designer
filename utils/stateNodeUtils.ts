@@ -65,6 +65,7 @@ const isOutGoingPath = (pathId: string, stateIndex: number) => {
   const { originState } = statesConnectedToElement(pathId);
   return (
     originState === stateIndex &&
+    !pathId.startsWith("selfLoopOnNode") &&
     !pathId.includes("Start") &&
     !pathId.includes("Arrow")
   );
@@ -74,6 +75,7 @@ const isInComingPath = (pathId: string, stateIndex: number) => {
   const { destinationState } = statesConnectedToElement(pathId);
   return (
     destinationState === stateIndex &&
+    !pathId.startsWith("selfLoopOnNode") &&
     !pathId.includes("Start") &&
     !pathId.includes("Arrow")
   );
