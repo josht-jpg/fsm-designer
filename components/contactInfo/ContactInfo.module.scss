@@ -1,0 +1,25 @@
+.contactInfo {
+  position: absolute;
+  left: 1rem;
+  margin: 0;
+  bottom: 3.5%;
+  @media (max-height: 875px) {
+    bottom: 0.75%;
+  }
+  @media (max-height: 805px) {
+    bottom: 0.5%;
+  }
+  @media (max-height: 600px) {
+    display: none;
+  }
+}
+
+.link {
+  color: black;
+  transition: 300ms;
+}
+
+.link:hover {
+  color: #4d7feb;
+  transition: 300ms;
+}

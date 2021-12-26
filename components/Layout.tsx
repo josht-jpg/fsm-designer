@@ -23,6 +23,7 @@ import DarkModeToggle from "./darkModeToggle/DarkModeToggle";
 import EditArea from "./edtiArea/EditArea";
 import FsmExplanationPanel from "./fsmExplanationPanel/FsmExplanationPanel";
 import getAllElementsByType from "../utils/getAllElementsByType";
+import ContactInfo from "./contactInfo/ContactInfo";
 
 type createInput = {
   x: number;
@@ -214,6 +215,7 @@ const Layout: React.FC<LayoutProps> = ({ title = "FSM Builder" }) => {
                             />
                             <EditorPanel />
                             <FsmExplanationPanel />
+                            <ContactInfo />
                             <HowTo />
                             <EditArea
                               setIsMouseInEditArea={setIsMouseInEditArea}

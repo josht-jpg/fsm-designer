@@ -78,8 +78,8 @@ const FsmExplanationPanel = () => {
       <p>
         Where the inputs are t=0, when no time has elapsed, and t=1, when enough
         time has elapsed for the traffic light to change states. The FSM
-        communicates that if we are in state green, after t=1 amount of time we
-        will be in the yellow state.
+        communicates that if we are in the state green, after t=1 amount of time
+        we will be in the yellow state.
       </p>
       <p>
         Here are some resources if you’d like to read more:
