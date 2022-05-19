@@ -63,7 +63,7 @@ const FsmExplanationPanel = () => {
 
       <p>
         The FSM will transition from one state to another based on given inputs.
-        For example, if we model a traffic light with an FSM.
+        For example, we can model a traffic light with an FSM:
       </p>
 
       <Image
@@ -78,7 +78,7 @@ const FsmExplanationPanel = () => {
       <p>
         Where the inputs are t=0, when no time has elapsed, and t=1, when enough
         time has elapsed for the traffic light to change states. The FSM
-        communicates that if we are in the state green, after t=1 amount of time
+        communicates that if we are in the green state, after t=1 amount of time
         we will be in the yellow state.
       </p>
       <p>
